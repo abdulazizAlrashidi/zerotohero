@@ -46,7 +46,7 @@ int create_db_header(int fd, struct dbheader_t **headerOut) {
     header->filesize = 12;
 
     *headerOut = header;
-
+    fd = fd -1;
     return STATUS_SUCCESS;
 }
 
